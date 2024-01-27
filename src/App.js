@@ -73,15 +73,6 @@ function CarShow() {
           offset={[0.0005, 0.0012]} // color offset
         />
       </EffectComposer>
-
-      {/* <PositionalAudio
-        // url={process.env.PUBLIC_URL + "/sound/furious.mp3"}
-        url = "/sound/furious.mp3"
-        distance={10}
-        volume={10}
-        autoplay={isAudioPlaying}
-        loop
-      /> */}
     </>
   );
 }
@@ -91,7 +82,6 @@ function App() {
     <Suspense fallback={null}>
       <Canvas shadows>
         <Scene />
-
         <CarShow />
       </Canvas>
     </Suspense>
